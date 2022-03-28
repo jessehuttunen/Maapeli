@@ -1,0 +1,428 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+.ball{
+    opacity: 0.85;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid DodgerBlue;
+}
+#otsikko{
+    background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+    position: absolute;
+    top: -9.5%;
+    left: 39%;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-top:    2px solid black;
+    border-right:  3px solid black; 
+    border-left:  3px solid black; 
+    border-radius: 100px 100px 0px 0px;
+    
+    
+}
+#otsikko h1{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    line-height: 0%;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 300%;
+    text-shadow: -1px 7px 10px #fff, 1px 5px 10px #000;
+    -webkit-text-stroke-width: 2.8px;
+    -webkit-text-stroke-color: #392200;
+    color: whitesmoke;
+    
+}
+#menuicon{
+   height: 100%;
+   filter: invert(100%);
+}
+#tucan{
+    height: 100%;
+}
+#menubutton{    
+    position: absolute;
+    top: 0.8%;
+    left: 0%;
+    height: 70px;
+    border-radius: 100px;
+    background: linear-gradient(120deg, #0075bd, #28acff);
+    background-size: 400% 400%;
+    border:3px solid white;
+    cursor: pointer;
+    opacity: 0.90;
+    transform-origin:left;
+}
+#menubutton:hover{
+    animation: colorchange 2s ease infinite;    
+}
+#etusivulle{
+    letter-spacing: 2px;
+    top: 10%;
+    height: 6%;
+}
+#pelille{
+    letter-spacing: 2px;
+    top: 20%;   
+    height: 6%;
+}
+#pelille2{
+    top: 30%;
+    height: 6%;
+}
+.navig{
+    font-size: 1.7vw;
+    padding-right: 0.5%;
+    padding-left: 2.2%;
+    text-align: right;
+    position: absolute;
+    border-radius: 0px 15px 15px 0px;
+    line-height: 1.7;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    font-family: Impact, Charcoal, sans-serif;
+
+    display: none;
+    position: absolute;
+    float: left;
+    height: 10%;
+    background: linear-gradient(120deg, #0075bd, #28acff);
+    background-size: 400% 400%;
+    color: white;
+    cursor: pointer;
+    border-top:    4px solid white;
+    border-right:  4px solid white; 
+    border-bottom:  4px solid white;
+    opacity: 0.90;
+}
+.navig:hover{
+    animation: colorchange 2s ease infinite;  
+}
+.nuoli{
+    position: absolute;
+    left: 1%;
+    top: -5%;
+    height: 110%;
+    width: 15%;
+
+}
+#target1 {
+    position: absolute;
+    top: 29%;
+    right: 45%;
+}
+#target2 {
+    position: absolute;
+    top: 29%;
+    right: 58%;
+}
+#target3 {
+    position: absolute;
+    top: 58%;
+    right: 67%;
+}
+#target4 {
+    position: absolute;
+    top: 82%;
+    left: 18%;
+}
+#target5 {
+    position: absolute;
+    top: 77%;
+    right: 66%;
+}
+#target6 {
+    position: absolute;
+    top: 70%;
+    left: 23%;
+}
+#target7 {
+    position: absolute;
+    top: 55%;
+    left: 21%;
+}
+#target8 {
+    position: absolute;
+    top: 38%;
+    right: 64%;
+}
+#target9 {
+    position: absolute;
+    top: 36%;
+    right: 68%;
+}
+#target10 {
+    position: absolute;
+    top: 56%;
+    left: 37%;
+}
+#target11 {
+    position: absolute;
+    top: 86%;
+    right: 55%;
+}
+#target12 {
+    position: absolute;
+    top: 59%;
+    right: 50%;
+}
+.draggable{
+    cursor: pointer;    
+}
+.draggable:hover{
+    animation: colorchange 2s ease infinite; 
+}
+#peli{
+    top: 12%;
+    left: 19%;
+    position: relative;
+    background-image:url(wood_planks.jpg);
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+}
+#alapeli{
+    overflow: visible;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+#kartta{
+    visibility: visible;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+main {
+	width:100%;
+	height:100%;
+}
+.name{
+    line-height: 1.6;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 140%;
+    color: white;
+    opacity: 0.90;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(120deg, #0487d8, #28acff);
+    background-size: 400% 400%;    
+    border-radius: 50px;
+}
+#maa7{
+    line-height: 1.1;
+    font-size: 110%;
+}
+#takaisin {
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #0075bd;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -20%;
+    left: -20%;
+    opacity: 0.90;
+    border:5px solid white;
+}
+#takaisin:hover{
+    animation:tilt 3s linear infinite;
+    animation-delay: 0.5s;
+    background-color: dodgerblue;
+}
+#mute {
+    cursor: pointer;
+    background-color: white;
+    opacity: 0.80;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    border-radius: 50px;
+    background-color: #0075bd;
+    border:4px solid white;
+    
+}
+#mute:hover{
+    background-color: dodgerblue;
+}
+#mutekuv{
+    filter: invert(100%);
+}
+#mutekuv:hover{    
+    animation:waveremove 4s linear infinite;
+    animation-delay: 0.5s;
+    }
+#reset {
+    cursor: pointer;
+    opacity: 0.90;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2%;
+    left: 1.3%;
+}
+#reset:hover{
+    filter: invert(100%);
+    animation:spin 4s linear infinite;
+}
+#ohje {
+    cursor: pointer;
+    opacity: 0.90;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+}
+#ohje:hover{
+    filter: invert(100%);
+}
+.ohjeicon:hover{
+    animation:yrotate 3s linear infinite;
+    animation-delay: 0.5s;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+}
+.icon2{
+    width: 90%;
+    height: 65%;
+}
+#back{
+    position: absolute;
+    top: 22px;
+    left: 21px;
+    width: 60%;
+    height: 68%;
+}
+#victory {
+    display: none;
+    height: 100%;
+    position: absolute;
+    right: 25%;
+}
+#vuori{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#sky{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+.cloud {
+    left: 0px; top: 0px;
+    position: absolute;
+	width: 200%; height: 100%;
+	background-image:url(pilvet.jpg);
+	-webkit-animation: moveclouds 100s linear infinite;
+
+}
+#ohjediv{
+    z-index: 100;
+    display: none;
+    top: 10%;
+    right: 10%;
+    position: absolute;
+    background: linear-gradient(-150deg, snow 5%, gold 90%);
+    width: 46%;
+    height: 55%;
+    padding-right: 40px;
+}
+#ohjediv p{
+    margin: 0;
+    text-align: center;
+}
+#rasti{
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+#rasti:hover{
+    filter: invert(30%);
+    animation:tilt 3s linear infinite;
+    animation-delay: 0.5s;
+}
+#tutorial{
+    margin-top: 3%;
+    margin-left: 4%;
+    height: 87%;
+}
+#again{    
+    opacity: 0.90;
+    cursor: pointer;
+    font-size: 150%;
+    color: white;
+    padding: 10px;
+    background: linear-gradient(120deg, #0075bd, #28acff);
+    background-size: 400% 400%;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 10%;
+    left: 38%;
+    display: none;
+    border: 3px solid white;
+}
+#again:hover{
+    animation: colorchange 2s ease infinite;  
+}
+#madeby{
+    position: absolute;
+    bottom: 0%;
+    right: 0.3%;
+    text-align: right;
+    line-height: 0.2;
+    display: inline-block;
+}
+@keyframes moveclouds {
+	0% {margin-left: 0p%;}
+	100% {margin-left: -100%;}
+}
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
+@keyframes tilt { 
+    0% { -webkit-transform: rotate(0deg);} 
+    25% { -webkit-transform: rotate(-15deg);} 
+    50% { -webkit-transform: rotate(0deg);}
+    75% { -webkit-transform: rotate(15deg);}
+    100% { -webkit-transform: rotate(0deg);}
+}
+@keyframes yrotate { 
+    0% { -webkit-transform: rotateY(0deg);} 
+    100% { -webkit-transform: rotateY(360deg);}
+}
+@keyframes waveremove { 
+    0% { clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);}
+    50% {clip-path: polygon(0% 0%, 60% 0%, 60% 100%, 0% 100%);} 
+    100% { clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);}
+}
+@keyframes colorchange { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

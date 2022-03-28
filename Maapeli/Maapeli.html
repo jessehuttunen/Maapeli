@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Maapeli</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="jesse.css"/>
+    <link rel="shortcut icon" type="image/png" href="mini_tukaani.png"/>
+</head>
+<body>
+
+<main>
+    <div id="sky">
+	<div class="cloud"></div>
+    </div>
+    <img src="Vuoripien.png" id="vuori"  alt="Tausta vuoristo"/>
+    <div id="menu"><button id="menubutton"><img src="tukaani.png" id="tucan"  alt="Logo"/><img src="Menuicon.png" id="menuicon"  alt="Menu icon"/></button>
+    </div>
+    
+    <!--Vaihda näistä kolmesta nuo linkit ja alhaalla on vielä yksi linkki etusivulle ja poista sitten nämä kommentit-->
+    <a href="etusivu.html"><div id="etusivulle" class="navig"><img src="nuoli.png" class="nuoli"  alt="nuoli"/>ETUSIVU</div></a>    
+    <a href="lippupeli.html"><div id="pelille" class="navig"><img src="nuoli.png" class="nuoli"  alt="nuoli"/>LIPPUPELI</div></a>
+    <a href="kaupunkipeli.html"><div id="pelille2" class="navig"><img src="nuoli.png" class="nuoli"  alt="nuoli"/>KAUPUNKIPELI</div></a>
+    
+    <div id="peli">
+        <div id="reset"><img src="679792_arrows_512x512.png" class="icon" alt="Pelin nollaus nappi"/></div>
+        
+        <div id="ohje"><img src="question-mark.png" class="icon ohjeicon" alt="Ohjeen nappi"/></div>
+        <div  id="otsikko"><h1>Maapeli</h1></div>
+        <div id="alapeli">
+            
+            <img src="kartta3.2pien.png" id="kartta" alt="Euroopan kartta"/>
+                
+                <div id="maa1" class="draggable name"><h3>Venäjä</h3></div>
+            
+                <div id="maa2" class="draggable name"><h3>Suomi</h3></div>
+            
+                <div id="maa3" class="draggable name"><h3>Saksa</h3></div>
+            
+                <div id="maa4" class="draggable name"><h3>Espanja</h3></div>
+            
+                <div id="maa5" class="draggable name"><h3>Italia</h3></div>
+            
+                <div id="maa6" class="draggable name"><h3>Ranska</h3></div>
+            
+                <div id="maa7" class="draggable name"><h3>Iso Britannia</h3></div>
+            
+                <div id="maa8" class="draggable name"><h3>Ruotsi</h3></div>
+            
+                <div id="maa9" class="draggable name"><h3>Norja</h3></div>
+            
+                <div id="maa10" class="draggable name"><h3>Puola</h3></div>
+            
+                <div id="maa11" class="draggable name"><h3>Kreikka</h3></div>
+            
+                <div id="maa12" class="draggable name"><h3>Ukraina</h3></div>
+
+
+            <div id="target1" class="droppable ball"></div>
+            
+            <div id="target2" class="droppable ball"></div>
+            
+            <div id="target3" class="droppable ball"></div>
+            
+            <div id="target4" class="droppable ball"></div>
+            
+            <div id="target5" class="droppable ball"></div>
+            
+            <div id="target6" class="droppable ball"></div>
+            
+            <div id="target7" class="droppable ball"></div>
+            
+            <div id="target8" class="droppable ball"></div>
+            
+            <div id="target9" class="droppable ball"></div>
+            
+            <div id="target10" class="droppable ball"></div>
+            
+            <div id="target11" class="droppable ball"></div>
+            
+            <div id="target12" class="droppable ball"></div>
+            
+            <img src="WS2k.gif" id="victory" alt="Victory firework"/>
+            
+            <div id="again"><h3>PELAA UUDESTAAN</h3></div>
+            
+        </div>   
+        
+<button id="mute">
+<img src="mute2.png"class="icon2" id="mutekuv" alt="Mute nappi"/>
+</button>
+<div id="ohjediv">    
+    <video id="tutorial" autoplay loop>
+  <source src="tutorial.mp4" type="video/mp4">
+  Selaimesi ei tue video tagia.
+</video>
+        <img src="rasti.png" id="rasti" alt="Ohjeen sulku nappi"/>
+    <p>Peliä pelataan viemällä nimi pallot oikeiden kohde pallojen päälle.</p>
+        </div>    
+ 
+        <!-- Tässä on vielä tämä yksi linkki. Poista tämä kommentti-->
+<a href="etusivu.html"><button id="takaisin">
+<img src="back.png" id="back" alt="Takaisin nappi"/>
+            </button></a>
+    </div>
+
+<div id="madeby"><h3>Made by</h3><h3>Jesse Huttunen</h3></div>
+</main>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="oma.js"></script>
+</body>
+</html>
